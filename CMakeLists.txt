@@ -11,5 +11,7 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
+include_directories("/usr/include/eigen3")
+
 add_executable(result main.cpp)
 target_link_libraries(result ${PCL_LIBRARIES} ${OpenCV_LIBS})
